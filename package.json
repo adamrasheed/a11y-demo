@@ -1,0 +1,14 @@
+{
+  "name": "a11y-demo",
+  "version": "1.0.0",
+  "description": "demo for ada compliance",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adam Rasheed",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

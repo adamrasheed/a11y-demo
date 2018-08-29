@@ -1,0 +1,155 @@
+*{box-sizing: border-box}
+
+/* Global */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    fontize: 16px;
+}
+
+/* Typography */
+a {
+    color: black;
+    text-decoration: none;
+    transition: all .15s ease-in-out;
+}
+
+a:hover {
+    color: lightseagreen
+}
+
+a:focus {
+    outline: 0;
+}
+
+/* Components */
+.logo {
+    text-transform: uppercase;
+    font-variant-caps: all-small-caps;
+    letter-spacing: .1em;
+    font-size: 18px;
+    padding: 0;
+    margin: 16px 0;
+    text-align: center;
+}
+
+.nav {
+    border-bottom: 1px solid cadetblue;
+    max-width: 768px;
+    margin: 24px auto 48px;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav__item {
+    display: block;
+}
+
+.nav__item--submenu {
+    position: relative;
+}
+
+
+.nav__submenu {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    width: auto;
+}
+
+.nav__link {
+    display: block;
+    text-align: center;
+    padding: 6px 12px;
+    transition: all .15s ease-in-out;
+    color: #9b9b9b;
+}
+
+.nav__link:hover {
+    color: black;
+    box-shadow: inset 0 -1px 0 0 cadetblue;
+}
+
+.submenu {
+    display: none;
+}
+
+.submenu.is-active {
+    display: block;
+}
+
+.submenu__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: white;
+    box-shadow: 0 2px 1px 0 rgba(0,0,0,0.15);
+}
+
+.submenu__item {
+    display: block;
+}
+
+.submenu__link {
+    display: block;
+    padding: 6px 12px;
+}
+
+.submenu__link:hover {
+    background: lightgray;
+    color: black;
+}
+
+.img {
+    display: block;
+    max-width: 480px;
+    margin: 0 auto 24px;
+}
+
+.btn {
+    width: fit-content;
+    padding: 8px 18px;
+    background: gray;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: white;
+    line-height: 1;
+}
+
+.btn-toggle {
+    background: lighten(#228091, 8%);
+    margin: 20px auto;
+    transition: all .15s ease-in-out;
+
+    cursor: pointer;
+
+    &:hover {
+        background: lighten(#228091, 5%);
+    }
+}
+
+.load-content {
+    max-width: 400px;
+    margin: 0 auto;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.make-a11y {
+    display: block;
+    margin: 2rem auto;
+    &:hover {
+        color: white
+    }
+}
