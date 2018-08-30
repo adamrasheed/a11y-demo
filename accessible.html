@@ -17,10 +17,10 @@
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item"><a href="" class="nav__link">About</a></li>
-                <li class="nav__item nav__item--submenu" data-submenu-a11y>
-                    <button class="nav__link nav__submenu-toggle" aria-haspopup="true" aria-expanded="false" data-submenu-toggle tab-index="-1">Products ⌄</button>
+                <li class="nav__item nav__item--submenu" >
+                    <a href="/products.html" class="nav__link nav__link--toggle" aria-haspopup="true" aria-expanded="false" data-submenu-toggle tabindex="0">Products ⌄</a>
                     <nav class="nav__submenu submenu" data-submenu>
-                        <ul class="submenu__list" tabindex="0">
+                        <ul class="submenu__list">
                             <li class="submenu__item"><a href="#/shirts.html" class="submenu__link">Shirts</a></li>
                             <li class="submenu__item"><a href="#/pants.html" class="submenu__link">Pants</a></li>
                             <li class="submenu__item"><a href="#/socks.html" class="submenu__link">Socks</a></li>
@@ -34,9 +34,9 @@
         </nav>
     </header>
 
-    <div class="main container">
+    <main class="container">
 
-        <img src="./image.jpg" class="img" alt="Golden Gate Bridge">
+        <img src="./image.jpg" class="img" alt="Golden Gate Bridge on a foggy morning">
         <button class="btn btn-toggle u-toggle" data-toggle aria-expanded="false">Show More</button>
 
         <p class="hidden load-content" data-content>
@@ -44,7 +44,7 @@
             dicta officiis vitae natus, tenetur quibusdam veritatis libero. Lorem ipsum dolor sit amet consectetur adipisicing
             elit. Magni, quae.
         </p>
-    </div>
+    </main>
 
     <a href="./index.html" class="btn make-a11y">Make This non-accessible</a>
 

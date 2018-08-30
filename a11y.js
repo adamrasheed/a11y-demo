@@ -37,7 +37,7 @@ const submenuToggle = self => {
         $submenu.removeClass('is-active');
   } else {
       $submenu.addClass('is-active');
-      $submenu.find('.submenu__link').eq(0).focus();
+      // $submenu.find('.submenu__link').eq(0).focus();
   }
 };
 
@@ -45,17 +45,12 @@ const BindUIActions = () => {
   // $submenu.on('mouseenter', Dropdown);
   // $submenuList.on('mouseleave', Dropdownrelease);
   $toggle.on("click", toggle);
-  $submenuToggle.on("click enter", function() {
+  $submenuToggle.on("click", function(e) {
+    e.preventDefault();
     submenuToggle(this);
+    console.log('clicked');
   });
-  $submenu.on('blur', function(){
-      $(this).removeClass('is-active');
-      console.log(this, 'losing focus');
-  });
-  $('.submenu__list').on('blur', function(){
-      $(this).removeClass('is-active');
-      console.log(this, 'losing focus');
-  });
+
 };
 
 $(window).on("load", function() {
